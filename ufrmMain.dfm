@@ -66,6 +66,7 @@ object Form1: TForm1
     Height = 25
     Caption = 'Restar'
     TabOrder = 4
+    OnClick = btnRestarClick
   end
   object Button3: TButton
     Left = 110

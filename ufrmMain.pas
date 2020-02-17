@@ -20,6 +20,7 @@ type
     txtResultado: TEdit;
     lblResultado: TLabel;
     procedure btnSumarClick(Sender: TObject);
+    procedure btnRestarClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -34,7 +35,20 @@ implementation
 {$R *.dfm}
 
 uses
-  uOperacion, uOperacionSuma;
+  uOperacion, uOperacionSuma, uOperacionResta;
+
+procedure TForm1.btnRestarClick(Sender: TObject);
+var
+  Operacion: IOperacion;
+begin
+  Operacion:= TOperacionResta.Create;
+  with (Operacion as TOperacionResta) do
+  begin
+    Numero1:= StrToInt(txtNumero1.Text);
+    Numero2:= StrToInt(txtNumero2.Text);
+  end;
+  txtResultado.Text:= IntToStr(Operacion.Calcular);
+end;
 
 procedure TForm1.btnSumarClick(Sender: TObject);
 var

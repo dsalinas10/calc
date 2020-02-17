@@ -18,7 +18,9 @@ uses
   uTestOperacionSuma in 'uTestOperacionSuma.pas',
   uOperacionSuma in '..\uOperacionSuma.pas',
   uOperacion in '..\uOperacion.pas',
-  DUnitTestRunner;
+  DUnitTestRunner,
+  uTestOperacionResta in 'uTestOperacionResta.pas',
+  uOperacionResta in '..\uOperacionResta.pas';
 
 {R *.RES}
 

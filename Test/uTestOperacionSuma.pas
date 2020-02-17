@@ -62,7 +62,7 @@ begin
   CheckEquals(ReturnValue, 9);
 end;
 
-procedure TestTOperacionSuma.TestCalcular9mas1;
+procedure TestTOperacionSuma.TestCalcular8mas1;
 var
   ReturnValue: Integer;
 begin
